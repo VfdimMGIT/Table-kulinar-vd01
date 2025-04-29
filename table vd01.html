@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Рейтинг блюд</title>
+    <style>
+        body {
+            background-color: #40e0d0; /* Бирюзовый фон страницы */
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;     /* Центрирование заголовка */
+            font-style: italic;     /* Курсивное начертание */
+            color: #333;            /* Цвет текста */
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #A9B5DF; /* Светло-голубой фон таблицы */
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+            border-radius: 30px 30px 30px 30px;
+        }
+
+        th {
+            background-color: #e6f7ff; /* Убираем серый фон заголовков */
+        }
+
+        img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 4px;
+        }
+        .img-zoom {
+          transition: all 0.3s ease;
+          z-index: 1;
+        }
+
+        .img-zoom:hover {
+        transform: scale(2);
+        z-index: 10; /* Поднимает картинку над другими элементами */
+        box-shadow: 0 0 20px rgba(0,0,0,0.3); /* Тень для объема */
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Мой кулинарный рейтинг</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Блюдо</th>
+                <th>Оценка</th>
+                <th>Рецепт</th>
+                <th>Фото</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Паста Карбонара</td>
+                <td>9/10</td>
+                <td><a href="https://www.koolinar.ru/recipe/view/165075" target="_blank">Рецепт</a></td>
+                <td><img src="../img/paste carbonare.jpg" class="img-zoom" alt="Паста Карбонара"></td>
+            </tr>
+            <tr>
+                <td>Окрошка</td>
+                <td>7/10</td>
+                <td><a href="https://www.koolinar.ru/recipe/view/174843" target="_blank">Рецепт</a></td>
+                <td><img src="../img/okroshka.jpg" class="img-zoom" alt="Окрошка"></td>
+            </tr>
+            <tr>
+                <td>Рататуй</td>
+                <td>8/10</td>
+                <td><a href="https://www.koolinar.ru/recipe/view/143965" target="_blank">Рецепт</a></td>
+                <td><img src="../img/ratatuy.jpg" class="img-zoom" alt="Рататуй"></td>
+            </tr>
+            <tr>
+                <td>Сельдь под шубой</td>
+                <td>6/10</td>
+                <td><a href="https://www.koolinar.ru/recipe/view/83328" target="_blank">Рецепт</a></td>
+                <td><img src="../img/seld pod shuboy.jpg" class="img-zoom" alt="Сельдь под шубой"></td>
+            </tr>
+            <tr>
+                <td>Тирамису</td>
+                <td>10/10</td>
+                <td><a href="https://www.koolinar.ru/recipe/view/123898" target="_blank">Рецепт</a></td>
+                <td><img src="../img/tiramisu.jpg" class="img-zoom" alt="Тирамису"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
